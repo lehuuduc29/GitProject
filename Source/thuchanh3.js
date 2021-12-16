@@ -1,0 +1,10 @@
+let inputNgay;
+let inputThang;
+let inputNam;
+inputNgay=prompt("Nhập vào ngày sinh của bạn:");
+inputThang=prompt("Nhập vào tháng sinh của bạn:");
+inputNam=prompt("Nhập vào năm sinh của bạn:");
+ngay=parseInt(inputNgay);
+thang=parseInt(inputThang);
+nam=parseInt(inputNam);
+document.writeln("Ngày tháng năm sinh của bạn là: " + ngay + "/" + thang + "/" + nam);
