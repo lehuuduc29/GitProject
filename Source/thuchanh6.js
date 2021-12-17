@@ -1,0 +1,12 @@
+let x;
+let y;
+let z;
+x = prompt("Nhập vào tên người nhận là 'Joe'.");
+y = prompt("Nhập vào địa điểm là 'Los Angeles'.");
+z = prompt("Nhập vào thời gian là 'ngày 10 tháng 10 năm 1951'."); 
+let tenNguoinhan = String(x);
+let diaDiem = String(y);
+let thoiGian = String(z);
+document.getElementById("tenNguoinhan").innerHTML = (tenNguoinhan);
+document.getElementById("diaDiem").innerHTML = (diaDiem);
+document.getElementById("thoiGian").innerHTML = (thoiGian);
