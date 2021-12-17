@@ -1,0 +1,13 @@
+let banKinh;
+banKinh=prompt("Nhập vào bán kính hình tròn:");
+let r=parseFloat(banKinh);
+let d= r*2;
+let c= r*2*3.14;
+let s= r*r*3.14;
+document.write("Bán kính nhập vào: " + r);
+document.write("<br>");
+document.write("Đường kính hình tròn là: " + d);
+document.write("<br>");
+document.write("Chu vi hình tròn là: " + c);
+document.write("<br>");
+document.write("Diện tích hình tròn là: " + s);
