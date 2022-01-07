@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm đại học</title>
+</head>
+<body>
+    <form action="urlserver">
+        <h2>Tính Điểm Đại Học khối D</h2>
+        Môn Toán: <input type="number" name="montoan" id="toan" value=""> <br><br>
+        Môn Văn: <input type="number" name="monvan" id="van" value=""> <br><br>
+        Môn Anh: <input type="number" name="monanh" id="anh" value=""> <br><br>
+        Khu Vực:
+        <select name="" id="khuvuc">
+            <option value="0.75">KV1</option>
+            <option value="0.5">KV2-NT</option>
+            <option value="0.25">KV2</option>
+            <option value="0">KV3</option>
+        </select>
+        <br><br><br>
+        <button type="button" id="click" onclick="tong()">Click</button> <span id="ketqua"></span>
+    </form>
+</body>
+<script src="thuchanh16.js"></script>
+</html>
