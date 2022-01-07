@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập sử dụng if-else-if</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a=prompt("nhap vao ten cua ban:");
+    a=a.toString();
+    if (a=="Admin") {
+        alert("nhap vao mat khau cua ban:");
+        let b=prompt("nhap vao mat khau cua ban:");
+        b=b.toString();
+            if(b=="TheMaster"){
+                alert("Welcome");
+            } else if(b=="null"){
+                    alert(" Canceled.");
+                } else{
+                        alert("Wrong password.");
+                    }
+    } else if(a=="null"){
+        alert("canceled");
+    }else{
+        alert("I don't know you");
+    }
+</script>
+</html>
