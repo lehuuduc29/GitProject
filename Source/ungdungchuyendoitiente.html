@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 600px; height: 100px;">
+            <table style="height: 100px; width: 400px;">
+                <tr>
+                    <th>Amount</th>
+                    <th>From Currency</th>
+                    <th>To Currency</th>
+                    <th>Convert</th>
+                </tr>
+                <tr>
+                    <td><input id="amount" type="number" name="number" value=""></td>
+                    <td>
+                        <select id="from_currency">
+                            <option type="number" value="23000">VND</option>
+                            <option type="number" value="1">USD</option>
+                            <option type="number" value="1198">WON</option>
+                            <option type="number" value="116">JPY</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="to_currency">
+                            <option type="number" value="23000">VND</option>
+                            <option type="number" value="1">USD</option>
+                            <option type="number" value="1198">WON</option>
+                            <option type="number" value="116">JPY</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button type="button" onclick="convert()">Convert</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kết quả:</td>
+                    <td id="ketqua"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<script src="thuchanh9.js"></script>
