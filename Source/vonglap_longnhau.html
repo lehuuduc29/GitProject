@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vòng lặp lồng nhau</title>
+    <style>
+        table {
+                table-layout: fixed;
+                width: 500px;
+                height: 500px;
+                text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="show" border="2"></table>
+</body>
+<script>
+    let html="";
+    for (let i=1; i<=10; i++) {
+        html+="<tr>"
+            for(let j=1; j<=10; j++){
+                html+="<td>"
+                    let a=i*j;
+                    html+=a;
+                html+="</td>"
+            }
+            document.write("<br/>")
+        html+="</tr>"
+    }
+    document.getElementById("show").innerHTML=html
+</script>
+</html>
