@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang cuu chuong</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: greenyellow;
+        }
+        td{
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" id="result">
+
+    </table>
+</body>
+<script>
+    let html = "";
+    for (let i = 1; i < 10; i++) {
+        html += "<tr>"
+        for (let j = 2; j < 10; j++) {
+            html += "<td>"
+            let a = i * j;
+            html += j + "x" + i + "=" + a
+            html += "</td>"
+        }
+        document.write("<br/>")
+        html += "</tr>"
+    }
+    document.getElementById("result").innerHTML = html
+</script>
+</html>
