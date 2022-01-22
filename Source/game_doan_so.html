@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game đoán số</title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">Play</button>
+    <script>
+        function myFunction() {
+            let a=parseInt(prompt("hảy nhập vào một số ngẫu nhiên lớn nhất trong khoảng bạn đoán:"))
+            let c=Math.floor(Math.random()*a+1);
+            let b=+prompt("hảy nhập vào số bạn đoán lần 1:")
+            while (b!=c) {
+               b=+prompt("hảy nhập lại số bạn đoán lần 2:")
+               if(b!=c){
+                    b=+prompt("hảy nhập lại số bạn đoán lần 3:")
+                    if(b==c){
+                        document.write("xin chuc mung ban:" + "</br>")
+                    }else{
+                        document.write("bạn đả hết quyền lựa chọn:" + "</br>")
+                    }
+               }else{
+                document.write("xin chuc mung ban:" + "</br>")
+               }
+               break;
+            }
+            document.write("số ngẫu nhiên là: " + c)
+        }
+    </script>
+</body>
+</html>
