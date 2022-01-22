@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tính năm Can Chi</title>
+</head>
+
+<body>
+    Kết Quả:
+    <span id="result"></span>
+</body>
+<script>
+    let a=+prompt("nhap vao so nam");
+    let b = a % 10;
+    let c=a%12;
+    function myCheck(a,b) {
+        switch (b) {
+            case 0:
+                return "Canh";
+                break;
+            case 1:
+                return "Tân";
+                break;
+            case 2:
+                return "Nhâm";
+                break;
+            case 3:
+                return "Qúy";
+                break;
+            case 4:
+                return "Giáp";
+                break;
+            case 5:
+                return "Ất";
+                break;
+            case 6:
+                return "Bính";
+                break;
+            case 7:
+                return "Đinh";
+                break;
+            case 8:
+                return "Mậu";
+                break;
+            case 9:
+                return "Kỷ";
+                break;
+        }
+    }
+    function myCheck2(a,c){
+        switch (c) {
+            case 0:
+                return "Thân";
+                break;
+            case 1:
+                return "Dậu";
+                break;
+            case 2:
+                return "Tuất";
+                break;
+            case 3:
+                return "Hợi";
+                break;
+            case 4:
+                return "Tý";
+                break;
+            case 5:
+                return "Sửu";
+                break;
+            case 6:
+                return "Dần";
+                break;
+            case 7:
+                return "Mẹo";
+                break;
+            case 8:
+                return "Thìn";
+                break;
+            case 9:
+                return "Tỵ";
+                break;
+            case 10:
+                return "Ngọ";
+                break;
+            case 11:
+                return "Mùi";
+                break;
+        }
+    }
+
+    let q=myCheck(a,b);
+    let k=myCheck2(a,c);
+    document.getElementById("result").innerHTML="Năm " + a +" là năm: " + q + " " + k;
+</script>
+
+</html>
