@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In dãy Fibonacci</title>
+</head>
+
+<body>
+    <h2>In dãy số Fibonacci.</h2>
+    <input id="num" type="number">
+    <br><br>
+    <button type="button" onclick="myShow()">Show</button>
+</body>
+<script>
+    function myShow() {
+        let a = +document.getElementById("num").value;
+        let x = 0;
+        let y = 1;
+        let conect;
+        while (a >= 1) {
+            document.write(y + " ");
+            conect = y;
+            y = y + x;
+            x = conect;
+            a--;
+        }
+    }
+</script>
+
+</html>
