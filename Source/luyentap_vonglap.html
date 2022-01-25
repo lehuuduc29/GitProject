@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luyện tập vòng lặp</title>
+</head>
+
+<body>
+    <h2>đếm từ 1 đến 100</h2>
+    <button type="button" onclick="count()">Click</button>
+    <br><br>
+    <h2>lấy thông tin nhiệt độ</h2>
+    <h2></h2>
+    <button type="button" onclick="temperature()">Click</button>
+    <br><br>
+    <h2>Hiển thị ra 20 số trong dãy fibonacci đầu tiên</h2>
+    <button type="button" onclick="myShow()">Click</button>
+    <br><br>
+    <h2>số đầu tiên trong dãy fibonacci chia hết cho 5</h2>
+    <button type="button" onclick="myClick()">Click</button>
+    <br><br>
+    <h2>Tính tổng của 20 số đầu tiên trong dãy fibonacci.</h2>
+    <button type="button" onclick="test()">Click</button>
+    <br> <br>
+    <h2>Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên</h2>
+    <button type="button" onclick="myTest()">Click</button>
+    <br><br>
+    <h2>In Fizz Buzz</h2>
+    <button type="button" onclick="fizzBuzz()">Click</button>
+
+</body>
+<script>
+    // Bài 1: đếm từ 1--->100;
+    function count() {
+        for (let i = 1; i <= 100; i++) {
+            alert(i);
+            if (i == 100) {
+                alert("done!")
+            }
+        }
+    }
+
+    // Bài 2: lấy thông tin nhiệt độ
+
+    function temperature() {
+        let temp = +prompt("nhập vào số nhiệt độ.");
+        while (temp < 20 || temp > 100) {
+            alert("nhập vào một số: 20 < temp <100");
+            temp = +prompt("nhập vào số nhiệt độ.");
+        }
+    }
+
+    // Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
+
+    function myShow() {
+        let a = 20;
+        let x = 0;
+        let y = 1;
+        let conect;
+        while (a >= 1) {
+            document.write(y + " ");
+            conect = y;
+            y = y + x;
+            x = conect;
+            a--;
+        }
+    }
+
+    // Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+
+    function myClick() {
+        let a = 20;
+        let x = 0;
+        let y = 1;
+        let conect;
+        while (a >= 1) {
+            //document.write(y + " ");
+            if (y % 5 == 0) {
+                document.write("số đầu tiên chia hết cho 5 là: " + y);
+                return true;
+            }
+            conect = y;
+            y = y + x;
+            x = conect;
+            a--;
+        }
+    }
+
+    // Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.
+
+    function test() {
+        let a = 20;
+        let x = 0;
+        let y = 1;
+        let conect;
+        let sum = 0;
+        while (a >= 1) {
+            //document.write(y + " ");
+            sum += y;
+            conect = y;
+            y = y + x;
+            x = conect;
+            a--;
+        }
+        document.write("tổng là: " + sum);
+    }
+
+    // Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên
+    function myTest() {
+        let sum = 0;
+        let m = 0;
+        for (let i = 1; i <= 30; i++) {
+            m += 7;
+            console.log(m);
+            sum += m;
+        }
+        document.write("tổng là: " + sum);
+    }
+
+    // Bài 7: Fizz Buzz.
+
+    function fizzBuzz() {
+        for (let i = 1; i <= 100; i++) {
+            let a=i;
+            if (i % 3 == 0 && i % 5 == 0) {
+                i = "fizzBuzz";
+            }
+            if (i % 3 == 0) {
+                i = "Fizz";
+            }
+            if (i % 5 == 0) {
+                i = "Buzz";
+            }
+            document.write(i + "&emsp;&emsp;");
+            i=a;
+        }
+    }
+
+</script>
+
+</html>
