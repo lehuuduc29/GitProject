@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiển thị số nguyên tố</title>
+</head>
+
+<body>
+    <input id="Number" type="number">
+    <br><br>
+    <button type="button" onclick="myShow()">Show</button>
+</body>
+<script>
+    let N = 2;
+    function myShow() {
+        let d = +document.getElementById("Number").value;
+        for (let j = 1; j <= d;) {
+            if (prime(N)) {
+                document.write(N + " ");
+                j++;
+            }
+            N++;
+        }
+    }
+
+    function prime(number) {
+        if (N<2) {
+            return false;
+        }
+        for (let i = 2; i <= number - 1; i++) {
+            let a = number % i;
+            if (a == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</html>
